@@ -1,8 +1,4 @@
 aa=int(input())
-l=[int(x) for x in input().split()]
-c=0
-for i in range(0,len(l)):
-	for j in range(1,len(l)):
-		if l[i]<l[j]:
-			c+=1
-print(c)
+l=[int(i) for i in input().split()]
+t=[1 for i in range(aa) for j in range(i+1,aa) if l[i]<l[j]]
+print(sum(t))
