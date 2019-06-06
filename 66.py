@@ -1,7 +1,7 @@
-k=list(map(int,input().split()))
-n=k[len(k)-1]
+aa=list(map(int,input().split()))
+z=aa[len(aa)-1]
 a=[i for i in input().split()]
 for i in a:
-    if a.count(str(i))==n:
+    if a.count(str(i))==z:
         print(i)
         break
